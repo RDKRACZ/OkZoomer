@@ -1,12 +1,10 @@
-package io.github.joaoh1.okzoomer.client.utils;
+package io.github.ennuil.okzoomer.utils;
 
 import java.util.Random;
 
-import io.github.joaoh1.okzoomer.client.config.OkZoomerConfigPojo;
-
-//The most humorous part of Ok Zoomer. ^w^
+// The most humorous part of Ok Zoomer. ^w^
 public class OwoUtils {
-    public static String[] OWO_ARRAY = new String[]{
+    public static String[] OWO_ARRAY = {
         "owo",
         "OwO",
         "uwu",
@@ -62,13 +60,17 @@ public class OwoUtils {
         "}w{",
         "_w_",
         "=w=",
-        "!w!"
+        "!w!",
+        "YwY",
+        "vwv",
+        "VwV",
+        "<w>",
+        "çwç",
+        "ÇwÇ"
     };
 
     public static void printOwo() {
-        if (OkZoomerConfigPojo.tweaks.printOwoOnStart) {
-            Random random = new Random();
-		    ZoomUtils.modLogger.info("[Ok Zoomer] " + OWO_ARRAY[random.nextInt(OWO_ARRAY.length)] + " what's this");
-        }
+        Random random = new Random();
+		ZoomUtils.modLogger.info("[Ok Zoomer] " + OWO_ARRAY[random.nextInt(OWO_ARRAY.length)] + " what's this");
     }
 }
